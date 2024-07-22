@@ -1009,6 +1009,11 @@ allowing you to work on multiple projects with different dependencies and packag
 # pip freeze > requirements.txt    #outputs a list of installed packages and their versions
 # pip install -r requirements.txt  #installs the packages listed in the requirements.txt
 
+# To create conda environment use 'conda create -p venv python==3.10 -y'
+# To activate conda environment use 'conda activate venv/'  
+# To deactivate conda environment use 'conda deactivate '
+
+
 
 
 '''36 Import Keyword'''
