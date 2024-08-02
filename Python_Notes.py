@@ -2744,3 +2744,38 @@ Shoutout to Harry'''
 # s.show_name()
 # del s
 # s.show_name()                #this will throw NameError: name 's' is not defined since object is deleted
+
+
+
+# '''71 SQL Connection'''
+# import sqlite3
+
+# #connect to a new database
+# conn=sqlite3.connect("alpha.db")
+
+# #create a cursor
+# cur=conn.cursor()
+
+# #create a table 
+# cur.execute('''CREATE TABLE employee(
+# 	e_id int NOT NULL,
+# 	e_name varchar(20),
+# 	e_salary int,
+# 	e_age int,
+# 	e_gender varchar(20),
+# 	e_dept varchar(20),
+# 	PRIMARY KEY(e_id)
+# 	);''')
+
+
+# cur.execute('''INSERT INTO employee
+#     VALUES(1,'SAM',40000,22,'MALE','GROUP FUNCTIONS');''')
+# cur.execute('''INSERT INTO employee
+#         VALUES(2,'ALEXA',40000,22,'FEMALE','GROUP FUNCTIONS');
+#         ''')
+# output=cur.execute('''SELECT * FROM employee''')
+# for row in output:
+#     print(row)
+# conn.commit()
+# cur.close()
+# conn.close()
