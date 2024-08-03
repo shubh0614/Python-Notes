@@ -2747,7 +2747,7 @@ Shoutout to Harry'''
 
 
 
-# '''71 SQL Connection'''
+'''71 SQL Connection'''
 # import sqlite3
 
 # #connect to a new database
@@ -2779,3 +2779,18 @@ Shoutout to Harry'''
 # conn.commit()
 # cur.close()
 # conn.close()
+
+
+
+'''72 MYSQL connection'''
+# import mysql.connector
+# mydb=mysql.connector,connect(host="localhost",user="user_name",passwd="password")
+
+# cur=mydb.cursor()
+
+# cur.execute('''Show databases''')
+# for i in cur :
+#     print(i)
+
+# result=cur.fetchone()          #returns one data
+# result=cur.fetchall()          #returns all data
