@@ -2782,7 +2782,7 @@ Shoutout to Harry'''
 
 '''72 MYSQL connection'''
 # import mysql.connector
-# mydb=mysql.connector,connect(host="localhost",user="user_name",passwd="password")
+# mydb=mysql.connector.connect(host="localhost",user="user_name",passwd="password")
 
 # cur=mydb.cursor()
 
@@ -2792,3 +2792,54 @@ Shoutout to Harry'''
 
 # result=cur.fetchone()          #returns one data
 # result=cur.fetchall()          #returns all data
+
+
+
+'''71 Logging'''
+'''Constant	    Numeric Value	 String Value
+logging.DEBUG	    10	            DEBUG
+logging.INFO	    20	            INFO
+logging.WARNING	    30	            WARNING
+logging.ERROR	    40	            ERROR
+logging.CRITICAL	50	            CRITICAL'''
+
+# import logging
+
+# logging.debug("This is a debug message")           #This doesn't give any error because by default, the logging module logs the messages with a severity level of WARNING or above. 
+# logging.info("This is an info message")            #This doesn't give any error because by default, the logging module logs the messages with a severity level of WARNING or above. 
+# logging.warning("This is a warning message")
+# logging.error("This is an error message")
+# logging.critical("This is a critical message")
+
+
+# To log debug and info level
+# logging.basicConfig(level=logging.DEBUG)            #we can also use logging level numeric value or string value in level parameter
+# logging.debug("This will get logged.")
+
+
+# We can edit logging format
+# logging.basicConfig(format="%(levelname)s:%(name)s:%(message)s")
+# logging.warning("Hello, Warning!")
+
+# logging.basicConfig(format="{levelname}:{name}:{message}", style="{")
+# logging.warning("Hello, Warning!")
+
+
+# to show time in logs
+# logging.basicConfig(format="{asctime} - {levelname} - {message}",
+#                     style="{",
+#                     datefmt="%Y-%m-%d %H:%M",
+#                     )
+# logging.warning("Hello, World")
+
+
+# to save logs in file
+# logging.basicConfig(
+#                     filename="app.log",
+#                     encoding="utf-8",
+#                     filemode="a",
+#                     format="{asctime} - {levelname} - {message}",
+#                     style="{",
+#                     datefmt="%Y-%m-%d %H:%M",
+#                     )
+# logging.warning("Hello, World")
