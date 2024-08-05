@@ -2843,3 +2843,12 @@ logging.CRITICAL	50	            CRITICAL'''
 #                     datefmt="%Y-%m-%d %H:%M",
 #                     )
 # logging.warning("Hello, World")
+
+# to display variable values in logs
+# logging.basicConfig(
+#     format="{asctime} - {levelname} - {message}",
+#     style="{",
+#     datefmt="%Y-%m-%d %H:%M",
+#     level=logging.DEBUG)
+# name = "Samara"
+# logging.debug(f"{name}")
