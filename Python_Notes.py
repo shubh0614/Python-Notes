@@ -2797,6 +2797,39 @@ Shoutout to Harry'''
 
 
 
+'''SQLAlchemy'''    #To be verified
+# import sqlalchemy as sa
+
+# engine=sa.create_engine("sqlite:///:memory:")
+# conn=engine.connect()
+
+# metadata=sa.MetaData()
+# user_table= sa.Table(
+#     "user",
+#     metadata,
+#     sa.Column("id",sa.Integer, primary_key=True),
+#     sa.Column("username",sa.String),
+#     sa.Column("email",sa.String)
+# )
+
+# def insert_user(username: str,email: str)-> None:
+#     query=user_table.insert().values(username=usernmae,email=email)
+#     conn.execute(query)
+
+# def select_user(username: str)-> sa.engine.Result:
+#     query=user_table.select().where(user_table.c.username==username)
+#     result= conn.execute(query)
+#     return result.fetchone()
+
+# if __name__=='main':
+#     metadata.create_all(engine)
+#     insert_user("Shubh","shubhpathak@gmail.com")
+#     print("S")
+#     print(select_user("Shubh"))
+#     conn.close()
+
+
+
 '''71 Logging'''
 '''Constant	    Numeric Value	 String Value
 logging.DEBUG	    10	            DEBUG
